@@ -1,0 +1,87 @@
+// Place all the styles related to the Pics controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+// Place all the styles related to the Pics controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body{
+font-family: Tahoma;
+  font-size: 13px;
+  text-align:left;
+  
+}
+h1{
+  text-align:center;
+  color:Blue;
+  margin:10px;
+  padding:3px
+}
+form.pic{
+  margin:10px;
+  width:300px;
+  height:100px;
+  margin-top:20px;
+  margin-left:250px;
+  padding:10px
+  
+}
+h2{
+   margin-left:320px;
+   padding:10px;
+   color:#780000 
+}
+.img img {
+  width:300px;
+  height:300px;
+  border-style:solid;
+  border-width:2px;
+  border-color:Black;
+  margin-left:250px;
+  margin-top:10px;
+  padding:20px
+ 
+}
+.commentlabel textarea {
+  height:40px;
+  weight:375px
+}
+label{
+  margin:2px;
+  font-size:15px;
+  color: #780000 
+
+
+  }
+ul li {
+  
+  color: #D00;
+  padding-left: 5px;
+  font-size: 13px;
+  font-weight:bold;
+}
+
+input[type="submit"]{
+background: #780000 ;
+border: 1px solid #29691D;
+border-top-width: 1px;
+border-left-width: 1px;
+border-top-style: solid;
+border-top-color: #29691D;
+color: white;
+text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+display:block;
+}
+
+
+
+.error_messages {
+  width: 400px;
+  border: 2px solid #CF0000;
+  padding: 0px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+  font-size: 12px;
+}
+
+

@@ -1,0 +1,28 @@
+<% @title="Add a Comment"%>
+<h2>
+	Add Comment
+</h2>
+<div class="img">
+	<%= image_tag(@photo.file_name) %>
+</div>
+<%= form_for(@comment, :url=>{:action => :post_comment, :id=> params[:id] }) do |f| %>
+<% if @comment.errors.any?%>
+<ul>
+	<% @comment.errors.full_messages.each do |msg| %>
+		<li>
+			<%= msg %>
+		</li>
+	<%end%>
+</ul>
+<%end%>
+<div class="message">
+	<p>
+		<%= f.label:Comment%>
+		</p>
+	<div class="commentlabel">	<%= f.text_area :comment %>
+	</div>
+</div>
+<div class="actions">
+	<%= f.submit %>
+</div>
+<% end %>

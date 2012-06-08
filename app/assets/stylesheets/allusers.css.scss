@@ -1,0 +1,53 @@
+body{
+font-family: Tahoma;
+  font-size: 15px;
+  text-align:left; 
+}
+
+h1{
+  text-align:center;
+  color:Blue;
+  margin:5px;
+  padding:3px
+}
+
+ #header{
+  width:800px;
+  align:center
+}
+
+ th {
+    background :#687291;
+    color: white;
+    font-weight:bold;
+    padding:5px;
+    margin:5px;
+    text-align:center
+ }
+ 
+table{
+      width:70%;
+      height:70%;
+      border-spacing: 0px 1px;
+      align:center;
+      margin:15px;
+      margin-left:300px;
+      
+ }
+ 
+td {
+      padding: 4px;
+      margin:4px;
+      text-align:center
+}
+
+td{
+background: #eeeff2;
+      color:black;
+      border-style:solid;
+      border-bottom:1px;
+      border-color:white;
+ }
+ td,.index{
+   width:200px
+ }

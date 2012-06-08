@@ -1,0 +1,109 @@
+// Place all the styles related to the login controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+head{
+  display:none;
+}
+body{
+  padding:0;
+  margin:0;
+  background: #E2E2CD;
+  text-align:center;
+  font-family:Helvetica, Arial, sans-serif;
+  margin-bottom:2em;
+}
+.small #wrapper{
+text-align: left;
+margin: 0 auto;
+}
+
+.login #wrapper{
+  width:420px;
+}
+#header{
+margin-bottom:20px;
+padding:30px;
+position:relative;
+ height:1%;
+}
+#header h1{
+margin:0 30px;
+text-align:left;
+font-weight:normal;
+}
+#topcorners{
+background: #F5F5EF;
+height: 10px;
+margin: 0 auto;
+position: relative;
+-webkit-border-radius: 8px 8px 0px 0px;
+border-radius: 8px 8px 0px 0px;
+}
+#content{
+padding: 15px 30px 10px 30px;
+color: #515348;
+font-size: 76%;
+line-height: 1.6em;
+height: 1%;
+background: #F5F5EF;
+}
+form.pic{
+ display: block;
+margin-top: 0em;
+}
+
+table.login{
+  margin: 5px 0;
+}
+table{
+display: table;
+border-collapse: separate;
+border-spacing: 2px;
+border-color: gray;
+}
+.mbottm025{
+  margin-bottom: 0.25em !important;
+}
+.mtop05{
+  margin-top: 0 !important;
+}
+
+.inputtext{
+  padding:3px;
+  width: 240px;
+  color: #515348;
+}
+
+.mbottom0{
+  margin-bottom: 0 !important;
+}
+.mtop025{
+  margin-top: 0.25em !important;
+}
+h1{
+  text-align: center;
+color: blue;
+margin: 10px;
+padding: 3px;
+}
+input.lbutton{
+text-align: center;
+margin: 10px;
+padding: 3px;
+
+}
+
+.error{
+ font-size: 14px;
+ color: #CF0000;
+  font-weight:bold;
+  text-align:center;
+  
+}
+
+
+
+
+
+
+

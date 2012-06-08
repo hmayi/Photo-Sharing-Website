@@ -1,0 +1,74 @@
+<% @title="Login Page"%>
+<body class="smalllogin">
+	<% if flash[:error] %>
+	<div class="error"> <%= flash[:error] %></div>
+	<% end %>
+<div id="wrapper">
+	<div>
+		<h1>Login Page</h1>
+	</div>
+	<div class="container">
+		<div id="topcorners">
+			<div class="cleft"></div>
+			<div class="cright"></div>
+		</div>
+	<div id="content">
+	<%= form_for(@user, :url=>{:action => :post_login}) do |f| %>
+	<% if @user.errors.any? %>
+	<ul>
+		<% @user.errors.full_messages.each do |msg| %>
+		<li>
+			<%= msg %>
+		</li>
+		<%end%>
+	</ul>
+	<%end%>
+	<table  class="login" style="margin-left: auto; margin-right: auto;">
+		<tbody>
+			<tr>
+				<td>
+					<p class="mtop0 mbottom025">
+						<strong>
+							<%= f.label :login,"Login",:class=>"login"  %>
+						</strong>
+					</p>
+						<%= f.text_field :login,:id=>"email",:tabindex=>"1",:class=>"inputtext"%>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p class="mtop0 mbottom025">
+						<strong>
+							<%= f.label :password, "Password" %>
+						</strong>
+					</p>
+					<%= f.text_field :password ,:tabindex=>"2", :class=>"inputtext"%>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p class="mtop0 mbottom0">
+					 	<a href="#">Forgot Password?</a>
+					 	<span style="padding:0 3 px;">|</span>
+					 	<a herf="#">Login using Google Apps </a>
+					 </p>
+				</td>
+			</tr>	
+			<tr>
+				<td>
+					<p class="mtop025 mbottom0">
+							
+							<%= f.label:rememberMe,"Remember me"%>
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td style="padding-top: 10px;">
+					<%= f.submit "Login",:class=>"lbutton"%>
+				</td>
+			</tr>	
+		<tbody>	
+	</table>
+<% end %> 
+</div>
+</body>

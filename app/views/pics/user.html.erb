@@ -1,0 +1,35 @@
+<% @title = "Displaying Photos of User" %>
+
+<span class="logout">
+	<a href="/user/logout">Logout</a>
+</span>
+<span>
+<a href="/pics/photo" class="upload">Upload Photo </a></span>
+<% @userphotos.each do |t|%>
+<p class="time">
+Photo created at:<%= (t.date_time).strftime("%b %d %Y")%></p>
+
+<div class="thumbnail">
+	<%= image_tag(t.file_name) %>
+	<div class="caption">
+		<% if(t.comments.length > 0)%>
+			<% t.comments.each do |k| %>
+				<p>
+					<h5><a href="user?id=<%= (k.user.id)%>"><%= (k.user.first_name)%>  <%= (k.user.last_name)%></a>
+					<%= (k.date_time).strftime("%b %d %Y")%> </h5>
+				</p>
+				<p>
+					<%= (k.comment)%>
+				</p>
+		   <%end%>
+		<%else%>
+		No comments
+		<%end%>
+	 </div>
+	 <p>
+	 <a href = "/pics/comment?id=<%= t.id%>" class="btn btn-primary"> Add comment </a>
+ </p>
+ </div>
+ 
+ 
+<%end%>

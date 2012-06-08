@@ -1,0 +1,16 @@
+<% @title = "Uploading photo"%>
+
+
+<%= form_for(@photo, :url=>{:action => :post_photo}, :html=>{:multipart => true, :class => 'pic'}) do |form| %>
+<% if @photo.errors.any? %>
+		<ul>
+			<% @photo.errors.full_messages.each do |msg| %>
+			<li><%= msg %></li>
+			<%end%>
+		</ul>
+	<%end%>
+	
+Upload your picture: <%= form.file_field(:image) %><br/>
+<%= submit_tag("Upload file" ) %>
+<%end %>
+

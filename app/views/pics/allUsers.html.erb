@@ -1,0 +1,19 @@
+<% @title = "Displaying all users"%>
+
+<div class="header">
+	<h1>Displaing Users Info</h1>
+	</div>
+	
+
+<div id="header">
+<table class="table" align="center">
+	<tr>
+	<th>index</th>
+		<th>Firstname Lastname </th></tr>
+	<% @users.each do |user|%>
+	<tr><td class="index"><%= user.id%></td>
+	<td class="name"><a href = "user?id=<%= user.id%>"><%= user.first_name%>  <%= user.last_name%></a></td></tr>
+	<%end%>
+		
+</table>
+</div>
